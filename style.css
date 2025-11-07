@@ -1,6 +1,6 @@
 /* ============================ Variáveis de Tema ============================== */
- /* Facilita a troca de cores em um só lugar */
- :root{
+/* Facilita a troca de cores em um só lugar */
+:root{
     --bg: #f7fafc; /*fundo geral*/
     --fg: #0f172a; /*Cor do texto Principal*/
     --muted: #475569; /*Cor Do Texto Secundário*/
@@ -8,7 +8,7 @@
     --brand-dark: #0284c7;
     --card: #ffffff; /*Cor de fundo dos cartões*/
     --border: #e2e8f0; /*Cor de Borda Sutil*/
- }
+}
 
 /* ================================ Reset Suave ================================= */
 /*Retira Padrões de margem*/
@@ -89,9 +89,40 @@ main, footer{
 /*fim das configurações da navegação*/
 
 
-.corpo {
+.container {
+    display: flex; /* Alinhamento das divisorias internas */
+    justify-content: space-between;
+    gap: 20px; /* Adiciona um espaço (gap) entre as divs filhas */
+    width: 100%; /* Ocupa a largura total disponível */
     background-color: #ffffff;
+    padding: 10px;
 }
+
+.section-esquerda {
+    flex: 1;
+    width: 50%;
+    padding: 15px;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.section-direita {
+    flex: 2;
+    width: 50%;
+    align-items: right;
+    justify-content: right;
+    overflow: hidden;
+    padding: 15px;
+}
+
+.section-direita .imagem-mapa {
+    max-width: 80%; /* nunca ultrapassa a largura da section */
+    height: auto; /* mantém proporção */
+    display: block; /* elimina “buracos” de inline-img */
+    object-fit: contain; /* garante que caiba sem distorcer */
+}
+
 
 .logoTopo{
     width: 150px;
@@ -102,10 +133,8 @@ main, footer{
 }
 
 .imagem-mapa{
-    width: 800px;
-    height: auto;
-    border-radius: 12px;
-    padding-left: 1500px;
+    
+    padding-left: 15px;
     padding-top: 20px;
 }
 
