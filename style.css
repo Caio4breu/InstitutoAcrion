@@ -17,6 +17,7 @@ html, body{margin: 0; padding: 0;}
 
 /* ============================== Base da Página ================================ */
 body{
+    margin: 0;
     font-family: system-ui, -apple-system, 'Segoe UI', Roboto, Ubuntu, Arial, sans-serif;
     color:var(--fg);
     background: radial-gradient(1200px 800px at 20% - 10%, #e0f2fe 0%, transparent 60%), radial-gradient(1200px 800px at 120% 110%, #e0f2fe 0%, transparent 60%),
@@ -33,18 +34,21 @@ main, footer{
 }
 
 .btn{
-    background-color: #0ea5e9;
-    color: white;
-    border: none;
     padding: 10px 20px;
-    border-radius: 8px;
+    background-color: #FFFFFF;
+    color: #000000;
+    border: none;
+    border: 5px solid transparent; /* A borda precisa ser transparente para funcionar o degrade */
+    border-image: linear-gradient(to right, #00341B 0%, #009A50 100%) 1;
+    border-radius: 50px;
     cursor: pointer;
     font-size: 16px;
     transition: background-color 0.3s ease, transform 0.2s ease;
-    }
+}
 
 .btn:hover{
-    background-color: #0284c7;
+    background-color: #00341B;
+    color: #FFFFFF;
     transform: scale(1.05);
 }
 
@@ -53,12 +57,12 @@ main, footer{
 }
 /*Configurações da navegação*/
 .nav-horizontal{
-    padding: 0;
+    padding: 0px 10px 0px 10px;
     margin: 0;
     list-style: none;
     display: flex; /* Alinha os itens em uma linha */
     align-items: center; /* Centralizando elementos */
-    justify-content: center; /* Centralizando elementos */
+    justify-content: space-evenly;
     background-color: #007A3F;
 }
 
@@ -71,12 +75,12 @@ main, footer{
 }
 
 .menu-horizontal{
-    padding: 0;
+    padding: 0px 10px 0px 10px;
     margin: 0;
     list-style: none;
     display: flex; /* Alinha os itens em uma linha */
     align-items: center; /* Centralizando elementos */
-    justify-content: center; /* Centralizando elementos */
+    justify-content: space-evenly; /* Centralizando elementos */
     background-color: #ffffff;
 }
 
@@ -91,33 +95,52 @@ main, footer{
 
 .container {
     display: flex; /* Alinhamento das divisorias internas */
+    flex-direction: row; /* garante horizontalidade */
     justify-content: space-between;
     gap: 20px; /* Adiciona um espaço (gap) entre as divs filhas */
     width: 100%; /* Ocupa a largura total disponível */
     background-color: #ffffff;
-    padding: 10px;
 }
 
 .section-esquerda {
     flex: 1;
-    width: 50%;
-    padding: 15px;
-    align-items: center;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    overflow: hidden;
+    align-items: flex-start;
 }
 
+.interno {
+    text-align: justify;
+    /* padding: 0; */
+    padding: 0;
+    align-items: center;
+}
+
+.interno h2, h4 {
+    margin: 0;
+    padding-left: 20px;
+    column-gap: 10px;
+}
+
+.zeromargens p {
+    margin: 0;
+}
+
+.interno p {}
+
 .section-direita {
-    flex: 2;
-    width: 50%;
-    align-items: right;
-    justify-content: right;
-    overflow: hidden;
-    padding: 15px;
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .section-direita .imagem-mapa {
-    max-width: 80%; /* nunca ultrapassa a largura da section */
+    margin: 0;
+    max-width: 100%; /* nunca ultrapassa a largura da section */
     height: auto; /* mantém proporção */
     display: block; /* elimina “buracos” de inline-img */
     object-fit: contain; /* garante que caiba sem distorcer */
@@ -133,9 +156,7 @@ main, footer{
 }
 
 .imagem-mapa{
-    
-    padding-left: 15px;
-    padding-top: 20px;
+    /* padding-left: 15px; */
 }
 
 .imagem-customizada3{
@@ -150,3 +171,30 @@ main, footer{
 .imagem-customizada3:hover{
     transform: scale(1.05);
 }
+
+/* Informações de data na pagina individuais e cada campo */
+.aba-datas {
+    padding-left: 0px;
+    padding-right: 0px;
+    /* Ordem: topo direita inferior esquerda */
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ffffff;
+    gap: 200px;
+}
+
+/* footer */
+
+.rodape {
+    padding-top: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
+
+
+/* footer */
