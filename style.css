@@ -33,6 +33,8 @@ main, footer{
     padding: 16px; /*Espaçamento Interno*/
 }
 
+/* ================================= Botões ================================== */
+
 .btn{
     padding: 10px 20px;
     background-color: #FFFFFF;
@@ -55,26 +57,10 @@ main, footer{
 .btn:active{
     transform: scale(0.98);
 }
-/*Configurações da navegação*/
-.nav-horizontal{
-    padding: 0px 10px 0px 10px;
-    margin: 0;
-    list-style: none;
-    display: flex; /* Alinha os itens em uma linha */
-    align-items: center; /* Centralizando elementos */
-    justify-content: space-evenly;
-    background-color: #007A3F;
-}
 
-.nav-horizontal li a {
-    display: block; /* Garante que o padding seja aplicado corretamente */
-    padding: 10px 20px; /* Adiciona espaçamento interno */
-    text-decoration: none; /* Remove sublinhado */
-    color: #ffffff; /* Define a cor do texto */
-    font-size: 12px;
-}
+/* ================================= Header ================================== */
 
-.menu-horizontal{
+.menu-horizontal{ /* Menu superior */
     padding: 0px 10px 0px 10px;
     margin: 0;
     list-style: none;
@@ -84,14 +70,32 @@ main, footer{
     background-color: #ffffff;
 }
 
-.menu-horizontal li a {
+.menu-horizontal li a { /* Configurações dos links dentro da lista */
     display: block; /* Garante que o padding seja aplicado corretamente */
     padding: 0px 30px; /* Adiciona espaçamento interno */
     text-decoration: none; /* Remove sublinhado */
     color: black; /* Define a cor do texto */
 }
-/*fim das configurações da navegação*/
 
+.nav-horizontal{  /* Barra de navegação entre os campos de futebol */
+    padding: 0px 10px 0px 10px;
+    margin: 0;
+    list-style: none;
+    display: flex; /* Alinha os itens em uma linha */
+    align-items: center; /* Centralizando elementos */
+    justify-content: space-evenly;
+    background-color: #007A3F;
+}
+
+.nav-horizontal li a { /* Configurações dos links dentro da lista */
+    display: block; /* Garante que o padding seja aplicado corretamente */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    text-decoration: none; /* Remove sublinhado */
+    color: #ffffff; /* Define a cor do texto */
+    font-size: 12px;
+}
+
+/* ================================ Conteudo ================================= */
 
 .container {
     display: flex; /* Alinhamento das divisorias internas */
@@ -102,7 +106,7 @@ main, footer{
     background-color: #ffffff;
 }
 
-.section-esquerda {
+.section-esquerda { /* Texto descritivo do campo esportivo */
     flex: 1;
     padding: 10px;
     display: flex;
@@ -111,26 +115,26 @@ main, footer{
     align-items: flex-start;
 }
 
-.interno {
+.interno { /* Texto descritivo do campo esportivo */
     text-align: justify;
     /* padding: 0; */
     padding: 0;
     align-items: center;
 }
 
-.interno h2, h4 {
+.interno h2, h4 { /* configurações dos titulo (h2 e h4) */
     margin: 0;
     padding-left: 20px;
     column-gap: 10px;
 }
 
-.zeromargens p {
+.zeromargens p { /* configurações dos paragrafos */
     margin: 0;
 }
 
-.interno p {}
+.interno p {} /* NÃO APAGAR */
 
-.section-direita {
+.section-direita { /* região do mapa */
     flex: 1;
     padding: 10px;
     display: flex;
@@ -155,7 +159,7 @@ main, footer{
     padding-top: 20px;
 }
 
-.imagem-mapa{
+.imagem-mapa{ /* NÃO APAGAR */
     /* padding-left: 15px; */
 }
 
@@ -168,11 +172,20 @@ main, footer{
     transition: transform 0.3s ease;
 }
 
-.imagem-customizada3:hover{
+/* .imagem-customizada3:hover{
     transform: scale(1.05);
+} */
+
+/* ================================ footer ================================= */
+
+.rodape {
+    padding-top: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffffff;
 }
 
-/* Informações de data na pagina individuais e cada campo */
 .aba-datas {
     padding-left: 0px;
     padding-right: 0px;
@@ -184,17 +197,3 @@ main, footer{
     background-color: #ffffff;
     gap: 200px;
 }
-
-/* footer */
-
-.rodape {
-    padding-top: 0;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    text-align: center;
-    color: #ffffff;
-}
-
-
-
-/* footer */
