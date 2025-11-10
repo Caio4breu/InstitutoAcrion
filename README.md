@@ -19,7 +19,7 @@ O projeto ainda está em desenvolvimento.
 
 ### **Alterações menores**
 - [ ] Finalizar a pagina matrix
-- [ ] Mudar o nome dos campos para parecer mais realista
+- [x] Mudar o nome dos campos para parecer mais realista
 - [ ] Escolher uma fonte adequada
 - [ ] Baixar todos os mapas
 
