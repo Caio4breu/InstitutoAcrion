@@ -27,14 +27,14 @@ O projeto ainda está em desenvolvimento.
 - [ ] index
 - [ ] agenda
 - [ ] campos
-  - [x] Campo Abobrinha
-  - [ ] Campo Lasanha
-  - [ ] Campo Pizza
-  - [ ] Campo Beringela Assada
-  - [ ] Campo Macarronada
-  - [ ] Campo Feijoada
-  - [ ] Campo Galinhada
-  - [ ] Campo Pão de Queijo
+  - [x] Campo Cafú
+  - [ ] Campo Campo Garrincha
+  - [ ] Campo Pelé
+  - [ ] Campo Rivaldo
+  - [ ] Campo Romário
+  - [ ] Campo Ronaldinho Gaúcho
+  - [ ] Campo Ronaldo Fenômeno
+  - [ ] Campo Taffarel
 
 ## **Créditos**
 Alexander ([Alexsanei](https://github.com/Alexsanei))  
