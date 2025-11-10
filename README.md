@@ -13,28 +13,33 @@ A plataforma deve fornecer métodos de organização onde os clientes possam esc
 ## **Ferramentas**
 - Figma
 - Adobe Illustrator
+- Visual Studio Code
 
 ## **Proximos passos**
 O projeto ainda está em desenvolvimento.
 
 ### **Alterações menores**
-- [ ] Finalizar a pagina matrix
+- [ ] Finalizar a pagina matriz (pagina base para todas as outras)
 - [x] Mudar o nome dos campos para parecer mais realista
 - [ ] Escolher uma fonte adequada
 - [ ] Baixar todos os mapas
+- [ ] Corrigir botão "Reserve o campo agora"
+- [ ] Desenvolvimento da aba de Usuario (ver figma para referencia)
 
 ### **Paginas**
-- [ ] index
-- [ ] agenda
-- [ ] campos
+- [ ] Index
+- [ ] Agenda
+- [ ] Campos
   - [x] Campo Cafú
-  - [ ] Campo Campo Garrincha
-  - [ ] Campo Pelé
-  - [ ] Campo Rivaldo
-  - [ ] Campo Romário
-  - [ ] Campo Ronaldinho Gaúcho
-  - [ ] Campo Ronaldo Fenômeno
-  - [ ] Campo Taffarel
+  - [x] Campo Campo Garrincha
+  - [x] Campo Pelé
+  - [x] Campo Rivaldo
+  - [x] Campo Romário
+  - [x] Campo Ronaldinho Gaúcho
+  - [x] Campo Ronaldo Fenômeno
+  - [x] Campo Taffarel
+- [ ] Contato
+- [ ] Sobre
 
 ## **Créditos**
 Alexander ([Alexsanei](https://github.com/Alexsanei))  
