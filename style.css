@@ -172,10 +172,6 @@ main, footer{
     transition: transform 0.3s ease;
 }
 
-/* .imagem-customizada3:hover{
-    transform: scale(1.05);
-} */
-
 /* ================================ Menu Horizontal dos Campos ================================= */
 
 .menu-scroll {
@@ -194,7 +190,8 @@ main, footer{
 .menu-item {
     background: #ffffff;
     padding: 10px;
-    min-width: 300px; /* tamanho mínimo */
+    width: 300px; /* tamanho mínimo */
+    height: 700px;
     text-decoration: none;
     color: #000;
     display: flex;
@@ -209,7 +206,10 @@ main, footer{
 }
 
 .menu-item p {
-    /* como deixar o texto cabendo dentro da div?? */
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* quantas linhas cabem */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .menu-item a {
@@ -217,14 +217,123 @@ main, footer{
 }
 
 .menu-item img {
+    width: 100%;
+    height: 450px;   /* altura padrão para todas */
+    object-fit: cover;   /* preenche o quadro sem distorcer */
+
+}
+
+/* ================================ contato ================================= */
+
+.containerContato {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px; 
+    width: 70%;
     height: 450px;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto; /* centraliza tudo */
+}
+
+.esquerdaTexto {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.esquerdaTexto h1 {
+    font-size: 40px;
+    margin: 0px 10px 5px 25px;
+}
+
+.esquerdaTexto h3 {
+    margin: 5px 10px 5px 25px;
+    color: #535353;
+}
+
+.esquerdaTexto h4 {
+    margin: 5px 10px 5px 25px;
+    color: #535353;
+}
+
+.esquerdaTexto p {
+    color: #535353;
+}
+
+.internoContato {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 10px 0px 0px 0px ;
+}
+.internoContatoEsquerda {
+    width: 5px; /* Largura da linha */
+    height: 100px; /* Altura da linha */
+    background-color: #007A3F; /* Cor da linha */
+    margin: 0px 0px 0px 50px ;
+}
+.internoContatoDireia {
+    flex: 1;
+}
+
+.direitaContato {
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconsContato {
+    margin: 10px 0px 0px 40px;
+    display: flex;
+    gap: 15px;
+    justify-content: left; /* Centraliza as imagens horizontalmente */
+    flex-wrap: wrap;
+}
+
+.iconsContato img {
+    height: 25px;
     width: auto;
 }
 
-.menu-item span {
-    font-size: 16px;
-    font-weight: 600;
-    text-align: center;
+.inputContato{
+    width: 100%;
+    height: 25px;
+}
+
+.inputArea { 
+    width: 100%;
+    height: 80px;
+    min-height: 10px;
+    resize: vertical;
+}
+
+.contatoTermos {
+    display: flex;
+    align-items: center; /* alinha verticalmente */
+    gap: 10px; /* espaço entre o checkbox e o texto */
+}
+
+.btnContato {
+    color: #FFFFFF;
+    background: radial-gradient(1200px 800px at 20% - 10%, #e0f2fe 0%, transparent 60%), radial-gradient(1200px 800px at 120% 110%, #e0f2fe 0%, transparent 60%),
+    var(--bg); /*leve textura de fundo*/
+    line-height: 1.6;
+    background: linear-gradient(to right, #009A50, #00341B);
+    width: 100%;
+}
+
+.btnContato:hover {
+    background-color: #00341B;
+    color: #FFFFFF;
+    transform: scale(0.95);
 }
 
 /* ================================ footer ================================= */
