@@ -19,10 +19,10 @@ A plataforma deve fornecer métodos de organização onde os clientes possam esc
 O projeto ainda está em desenvolvimento.
 
 ### **Alterações menores**
-- [ ] Finalizar a pagina matriz (pagina base para todas as outras)
+- [x] Finalizar a pagina matriz (pagina base para todas as outras)
 - [x] Mudar o nome dos campos para parecer mais realista
 - [ ] Escolher uma fonte adequada
-- [ ] Baixar todos os mapas
+- [ ] Corrigir as paginas dos campos individuais
 - [ ] Corrigir botão "Reserve o campo agora"
 - [ ] Desenvolvimento da aba de Usuario (ver figma para referencia)
 
@@ -38,7 +38,7 @@ O projeto ainda está em desenvolvimento.
   - [x] Campo Ronaldinho Gaúcho
   - [x] Campo Ronaldo Fenômeno
   - [x] Campo Taffarel
-- [ ] Contato
+- [x] Contato
 - [ ] Sobre
 
 ## **Créditos**
