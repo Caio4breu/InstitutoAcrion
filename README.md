@@ -25,11 +25,13 @@ O projeto ainda está em desenvolvimento.
 - [ ] Corrigir as paginas dos campos individuais
 - [ ] Corrigir botão "Reserve o campo agora"
 - [ ] Desenvolvimento da aba de Usuario (ver figma para referencia)
+- [ ] Coleta de imagens (sem direitos autorais e de boa qualidade) de jogos
+- [ ] Uso de JavaScript ou TypeScript
 
 ### **Paginas**
 - [ ] Index
-- [ ] Agenda
-- [ ] Campos
+- [x] Agenda
+- [x] Campos
   - [x] Campo Cafú
   - [x] Campo Campo Garrincha
   - [x] Campo Pelé
@@ -39,7 +41,8 @@ O projeto ainda está em desenvolvimento.
   - [x] Campo Ronaldo Fenômeno
   - [x] Campo Taffarel
 - [x] Contato
-- [ ] Sobre
+- [ ] Sobre (Acrion)
+- [ ] Sobre (Aravia)
 
 ## **Créditos**
 Alexander ([Alexsanei](https://github.com/Alexsanei))  
