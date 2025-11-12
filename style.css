@@ -58,6 +58,26 @@ main, footer{
     transform: scale(0.98);
 }
 
+.entreContato {
+    padding-left: 0px;
+    padding-right: 0px;
+    /* Ordem: topo direita inferior esquerda */
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.entreContato {
+    padding-left: 0px;
+    padding-right: 0px;
+    /* Ordem: topo direita inferior esquerda */
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 /* ================================= Header ================================== */
 
 .menu-horizontal{ /* Menu superior */
@@ -161,15 +181,6 @@ main, footer{
 
 .imagem-mapa{ /* NÃO APAGAR */
     /* padding-left: 15px; */
-}
-
-.imagem-customizada3{
-    width: 200px;
-    height: auto;
-    border: 3px solid #0ea5e9;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease;
 }
 
 /* ================================ Menu Horizontal dos Campos ================================= */
@@ -334,6 +345,83 @@ main, footer{
     background-color: #00341B;
     color: #FFFFFF;
     transform: scale(0.95);
+}
+
+/* ================================ Calendario ================================= */
+/* Usado um modelo */
+
+.containerCalend {
+    display: flex; 
+    flex-direction: row; 
+    gap: 20px; 
+    width: 100%;
+    padding: 20px 0px 20px 0px ;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto; /* centraliza tudo */
+}
+
+/* Calendar container */
+.calendar {
+    width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 10px 10px 10px 10px ;
+}
+
+/* Calendar header styling */
+.calendar-header {
+    display: flex;
+    justify-content: space-between; /* <-- muda isso */
+    align-items: center; /* opcional: centraliza verticalmente */
+    flex-direction: row;
+    text-align: left;
+    color: #000000;
+    padding: 10px;
+    font-size: 1.2em; /* alguma o tamnho da fonte em 20% */
+    font-weight: bold;
+    padding: 0px 50px 0px 50px;
+}
+
+.calendar-header h4 {
+    font-size: 1.5em;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.diaBase {
+    border-radius: 0px 0px 20px 20px;
+}
+
+/* Days of the week styling */
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    color: #000000;
+}
+
+.calendar-days div {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Date cells styling */
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-dates div {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ffffff;
+}
+
+/* Highlight today */
+.today {
+    background-color: #016e15;
+    font-weight: bold;
+    color: #FFFFFF;
 }
 
 /* ================================ footer ================================= */
