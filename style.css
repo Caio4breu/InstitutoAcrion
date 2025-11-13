@@ -33,12 +33,14 @@ main, footer{
     padding: 16px; /*Espaçamento Interno*/
 }
 
+/* ================================= Botões ================================== */
+
 .btn{
     padding: 10px 20px;
     background-color: #FFFFFF;
     color: #000000;
     border: none;
-    border: 5px solid transparent; /* A borda precisa ser transparente para funcionar o degrade */
+    /* border: 5px solid transparent; */
     border-image: linear-gradient(to right, #00341B 0%, #009A50 100%) 1;
     border-radius: 50px;
     cursor: pointer;
@@ -55,26 +57,30 @@ main, footer{
 .btn:active{
     transform: scale(0.98);
 }
-/*Configurações da navegação*/
-.nav-horizontal{
-    padding: 0px 10px 0px 10px;
-    margin: 0;
-    list-style: none;
-    display: flex; /* Alinha os itens em uma linha */
-    align-items: center; /* Centralizando elementos */
-    justify-content: space-evenly;
-    background-color: #007A3F;
+
+.entreContato {
+    padding-left: 0px;
+    padding-right: 0px;
+    /* Ordem: topo direita inferior esquerda */
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.nav-horizontal li a {
-    display: block; /* Garante que o padding seja aplicado corretamente */
-    padding: 10px 20px; /* Adiciona espaçamento interno */
-    text-decoration: none; /* Remove sublinhado */
-    color: #ffffff; /* Define a cor do texto */
-    font-size: 12px;
+.entreContato {
+    padding-left: 0px;
+    padding-right: 0px;
+    /* Ordem: topo direita inferior esquerda */
+    margin: 10px 0px 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.menu-horizontal{
+/* ================================= Header ================================== */
+
+.menu-horizontal{ /* Menu superior */
     padding: 0px 10px 0px 10px;
     margin: 0;
     list-style: none;
@@ -84,14 +90,32 @@ main, footer{
     background-color: #ffffff;
 }
 
-.menu-horizontal li a {
+.menu-horizontal li a { /* Configurações dos links dentro da lista */
     display: block; /* Garante que o padding seja aplicado corretamente */
     padding: 0px 30px; /* Adiciona espaçamento interno */
     text-decoration: none; /* Remove sublinhado */
     color: black; /* Define a cor do texto */
 }
-/*fim das configurações da navegação*/
 
+.nav-horizontal{  /* Barra de navegação entre os campos de futebol */
+    padding: 0px 10px 0px 10px;
+    margin: 0;
+    list-style: none;
+    display: flex; /* Alinha os itens em uma linha */
+    align-items: center; /* Centralizando elementos */
+    justify-content: space-evenly;
+    background-color: #007A3F;
+}
+
+.nav-horizontal li a { /* Configurações dos links dentro da lista */
+    display: block; /* Garante que o padding seja aplicado corretamente */
+    padding: 10px 20px; /* Adiciona espaçamento interno */
+    text-decoration: none; /* Remove sublinhado */
+    color: #ffffff; /* Define a cor do texto */
+    font-size: 12px;
+}
+
+/* ================================ Conteudo ================================= */
 
 .container {
     display: flex; /* Alinhamento das divisorias internas */
@@ -102,7 +126,7 @@ main, footer{
     background-color: #ffffff;
 }
 
-.section-esquerda {
+.section-esquerda { /* Texto descritivo do campo esportivo */
     flex: 1;
     padding: 10px;
     display: flex;
@@ -111,41 +135,56 @@ main, footer{
     align-items: flex-start;
 }
 
-.interno {
+.interno { /* Texto descritivo do campo esportivo */
     text-align: justify;
     /* padding: 0; */
     padding: 0;
     align-items: center;
 }
 
-.interno h2, h4 {
+.interno h2, h4 { /* configurações dos titulo (h2 e h4) */
     margin: 0;
     padding-left: 20px;
     column-gap: 10px;
 }
 
-.zeromargens p {
+.zeromargens p { /* configurações dos paragrafos */
     margin: 0;
 }
 
-.interno p {}
+.interno p {} /* NÃO APAGAR */
 
-.section-direita {
+.section-direita { /* região do mapa */
     flex: 1;
     padding: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.imgCampo{ 
+    width: 560px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.imgCampo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* object-position: bottom;  deveria funcionar, depois eu vejo */
+}
 
 .section-direita .imagem-mapa {
     margin: 0;
-    max-width: 100%; /* nunca ultrapassa a largura da section */
-    height: auto; /* mantém proporção */
-    display: block; /* elimina “buracos” de inline-img */
-    object-fit: contain; /* garante que caiba sem distorcer */
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+    object-fit: contain; 
 }
 
+/* .imagem-mapa{
+
+} */
 
 .logoTopo{
     width: 150px;
@@ -155,24 +194,263 @@ main, footer{
     padding-top: 20px;
 }
 
-.imagem-mapa{
-    /* padding-left: 15px; */
+
+/* ================================ Menu Horizontal dos Campos ================================= */
+
+.menu-scroll {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto; /* Habilita rolagem horizontal */
+    padding: 20px;
+    scroll-behavior: smooth; /* rolagem suave */
+    white-space: nowrap;
 }
 
-.imagem-customizada3{
-    width: 200px;
+.menu-item {
+    background: #ffffff;
+    padding: 10px;
+    width: 300px; /* tamanho mínimo */
     height: auto;
-    border: 3px solid #0ea5e9;
-    border-radius: 12px;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    transition: transform 0.3s ease;
+    text-decoration: none;
+    color: #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+    transition: transform 0.2s;
 }
 
-.imagem-customizada3:hover{
-    transform: scale(1.05);
+.menu-item:hover {
+    transform: scale(1.025);
 }
 
-/* Informações de data na pagina individuais e cada campo */
+.menu-item p {
+    /* padding-right: 5px; */
+    width: 250px;
+    text-align: left;
+    text-wrap: wrap;
+}
+
+.menu-item h2 {
+    text-wrap: wrap;
+    text-align: center;
+}
+
+.menu-item a {
+    color: black;
+}
+
+.menu-item img {
+    width: 100%;
+    height: 450px;   /* altura padrão para todas */
+    object-fit: cover;   /* preenche o quadro sem distorcer */
+
+}
+
+/* ================================ contato ================================= */
+
+.containerContato {
+    display: flex;
+    flex-direction: row; 
+    gap: 20px; 
+    width: 70%;
+    height: 450px;
+    background-color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto; /* centraliza tudo */
+}
+
+.esquerdaTexto {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.esquerdaTexto h1 {
+    font-size: 40px;
+    margin: 0px 10px 5px 25px;
+}
+
+.esquerdaTexto h3 {
+    margin: 5px 10px 5px 25px;
+    color: #535353;
+}
+
+.esquerdaTexto h4 {
+    margin: 5px 10px 5px 25px;
+    color: #535353;
+}
+
+.esquerdaTexto p {
+    color: #535353;
+}
+
+.internoContato {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    margin: 10px 0px 0px 0px ;
+}
+.internoContatoEsquerda {
+    width: 5px; /* Largura da linha */
+    height: 100px; /* Altura da linha */
+    background-color: #007A3F; /* Cor da linha */
+    margin: 0px 0px 0px 50px ;
+}
+.internoContatoDireia {
+    flex: 1;
+}
+
+.direitaContato {
+    flex: 1;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px 50px 10px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.iconsContato {
+    margin: 10px 0px 0px 40px;
+    display: flex;
+    gap: 15px;
+    justify-content: left; /* Centraliza as imagens horizontalmente */
+    flex-wrap: wrap;
+}
+
+.iconsContato img {
+    height: 25px;
+    width: auto;
+}
+
+.inputContato{
+    width: 100%;
+    height: 25px;
+}
+
+.inputArea { 
+    width: 100%;
+    height: 80px;
+    min-height: 10px;
+    resize: vertical;
+}
+
+.contatoTermos {
+    display: flex;
+    align-items: center; /* alinha verticalmente */
+    gap: 10px; /* espaço entre o checkbox e o texto */
+}
+
+.btnContato {
+    color: #FFFFFF;
+    background: radial-gradient(1200px 800px at 20% - 10%, #e0f2fe 0%, transparent 60%), radial-gradient(1200px 800px at 120% 110%, #e0f2fe 0%, transparent 60%),
+    var(--bg); /*leve textura de fundo*/
+    line-height: 1.6;
+    background: linear-gradient(to right, #009A50, #00341B);
+    width: 100%;
+}
+
+.btnContato:hover {
+    background-color: #00341B;
+    color: #FFFFFF;
+    transform: scale(0.95);
+}
+
+/* ================================ Calendario ================================= */
+/* Usado um modelo */
+
+.containerCalend {
+    display: flex; 
+    flex-direction: row; 
+    gap: 20px; 
+    width: 100%;
+    padding: 20px 0px 20px 0px ;
+    justify-content: center;
+    align-items: center;
+    margin: 10px auto; /* centraliza tudo */
+}
+
+/* Calendar container */
+.calendar {
+    width: 800px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #ffffff;
+    border-radius: 10px 10px 10px 10px ;
+}
+
+/* Calendar header styling */
+.calendar-header {
+    display: flex;
+    justify-content: space-between; /* <-- muda isso */
+    align-items: center; /* opcional: centraliza verticalmente */
+    flex-direction: row;
+    text-align: left;
+    color: #000000;
+    padding: 10px;
+    font-size: 1.2em; /* alguma o tamnho da fonte em 20% */
+    font-weight: bold;
+    padding: 0px 50px 0px 50px;
+}
+
+.calendar-header h4 {
+    font-size: 1.5em;
+    border-radius: 20px 20px 0px 0px;
+}
+
+.diaBase {
+    border-radius: 0px 0px 20px 20px;
+}
+
+/* Days of the week styling */
+.calendar-days {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    color: #000000;
+}
+
+.calendar-days div {
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Date cells styling */
+.calendar-dates {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.calendar-dates div {
+    padding: 20px;
+    text-align: center;
+    border: 1px solid #ffffff;
+}
+
+/* Highlight today */
+.today {
+    background-color: #016e15;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+/* ================================ footer ================================= */
+
+.rodape {
+    padding-top: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: #ffffff;
+}
+
 .aba-datas {
     padding-left: 0px;
     padding-right: 0px;
