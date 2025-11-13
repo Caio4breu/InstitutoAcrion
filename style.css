@@ -40,7 +40,7 @@ main, footer{
     background-color: #FFFFFF;
     color: #000000;
     border: none;
-    border: 5px solid transparent; /* A borda precisa ser transparente para funcionar o degrade */
+    /* border: 5px solid transparent; */
     border-image: linear-gradient(to right, #00341B 0%, #009A50 100%) 1;
     border-radius: 50px;
     cursor: pointer;
@@ -202,7 +202,7 @@ main, footer{
     background: #ffffff;
     padding: 10px;
     width: 300px; /* tamanho mínimo */
-    height: 700px;
+    height: auto;
     text-decoration: none;
     color: #000;
     display: flex;
@@ -210,17 +210,22 @@ main, footer{
     align-items: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     transition: transform 0.2s;
+
 }
 
 .menu-item:hover {
-    transform: scale(1.05);
+    transform: scale(1.025);
 }
 
 .menu-item p {
-    display: -webkit-box;
-    -webkit-line-clamp: 4; /* quantas linhas cabem */
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    /* padding-right: 5px; */
+    width: 250px;
+    text-wrap: wrap;
+}
+
+.menu-item h2 {
+    text-wrap: wrap;
+    text-align: center;
 }
 
 .menu-item a {
