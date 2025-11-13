@@ -23,7 +23,7 @@ O projeto ainda está em desenvolvimento.
 - [x] Mudar o nome dos campos para parecer mais realista
 - [ ] Escolher uma fonte adequada
 - [ ] Corrigir as paginas dos campos individuais
-- [ ] Corrigir botão "Reserve o campo agora"
+- [x] Corrigir botão "Reserve o campo agora"
 - [ ] Desenvolvimento da aba de Usuario (ver figma para referencia)
 - [ ] Coleta de imagens (sem direitos autorais e de boa qualidade) de jogos
 - [ ] Uso de JavaScript ou TypeScript

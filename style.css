@@ -161,15 +161,30 @@ main, footer{
     justify-content: center;
     align-items: center;
 }
+.imgCampo{ 
+    width: 560px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.imgCampo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    /* object-position: bottom;  deveria funcionar, depois eu vejo */
+}
 
 .section-direita .imagem-mapa {
     margin: 0;
-    max-width: 100%; /* nunca ultrapassa a largura da section */
-    height: auto; /* mantém proporção */
-    display: block; /* elimina “buracos” de inline-img */
-    object-fit: contain; /* garante que caiba sem distorcer */
+    max-width: 100%;
+    height: auto; 
+    display: block; 
+    object-fit: contain; 
 }
 
+/* .imagem-mapa{
+
+} */
 
 .logoTopo{
     width: 150px;
@@ -179,9 +194,6 @@ main, footer{
     padding-top: 20px;
 }
 
-.imagem-mapa{ /* NÃO APAGAR */
-    /* padding-left: 15px; */
-}
 
 /* ================================ Menu Horizontal dos Campos ================================= */
 
@@ -210,7 +222,6 @@ main, footer{
     align-items: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
     transition: transform 0.2s;
-
 }
 
 .menu-item:hover {
@@ -220,6 +231,7 @@ main, footer{
 .menu-item p {
     /* padding-right: 5px; */
     width: 250px;
+    text-align: left;
     text-wrap: wrap;
 }
 
